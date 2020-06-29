@@ -21,7 +21,13 @@
                         </h2>
                     </div>
                     <div id="collapseOne" class="collapse show pl-3" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <center>{{cep.cep}}</center>
+                        <center>
+                            {{#if cep}}
+                                {{cep.cep}}
+                            {{else}}
+                                Busque por um CEP
+                            {{/if}}    
+                        </center>
                     </div>
 
                     <div id="headingTwo">
@@ -32,7 +38,13 @@
                         </h2>
                     </div>
                     <div id="collapseTwo" class="collapse pl-3" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <center>{{cep.state}}</center>
+                        <center>
+                            {{#if cep}}
+                                {{cep.state}}
+                            {{else}}
+                                Busque por um CEP
+                            {{/if}}    
+                        </center>
                     </div>
 
                     <div id="headingThree">
@@ -43,7 +55,13 @@
                         </h2>
                     </div>
                     <div id="collapseThree" class="collapse pl-3" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <center>{{cep.city}}</center>
+                        <center>
+                            {{#if cep}}
+                                {{cep.city}}
+                            {{else}}
+                                Busque por um CEP
+                            {{/if}}    
+                        </center>
                     </div>
 
                     <div id="headingFour">
@@ -54,7 +72,13 @@
                         </h2>
                     </div>
                     <div id="collapseFour" class="collapse pl-3" aria-labelledby="headingFour" data-parent="#accordionExample">
-                        <center>{{cep.neighborhood}}</center>
+                        <center>
+                            {{#if cep}}
+                                {{cep.neighborhood}}
+                            {{else}}
+                                Busque por um CEP
+                            {{/if}}    
+                        </center>
                     </div>
 
                     <div id="headingFive">
@@ -65,7 +89,13 @@
                         </h2>
                     </div>
                     <div id="collapseFive" class="collapse pl-3" aria-labelledby="headingFive" data-parent="#accordionExample">
-                        <center>{{cep.street}}</center>
+                        <center>
+                            {{#if cep}}
+                                {{cep.street}}
+                            {{else}}
+                                Busque por um CEP
+                            {{/if}}    
+                        </center>
                     </div>
                 </div>
             </center>
