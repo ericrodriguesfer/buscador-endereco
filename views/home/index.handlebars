@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col">
+            <center><h1>Busque por seu CEP em questão!</h1></center><br>
+            <center>
+                <form action="/search" method="POST" class="form-search">
+                    <div class="form-outline">
+                        <input type="text" id="cep_search" name="cep_search" class="form-control" minlength="8" maxlength="8" required/>
+                        <label class="form-label" for="cep_search" >Digite aqui o CEP pelo qual deseja buscar</label>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary btn-search">Buscar</button>
+                </form>
+                <br>
+                <div class="accordion" id="accordionExample">
+                    <div id="headingOne">
+                        <h2 class="bg-light">
+                            <button class="btn btn-link btn-block text-left pl-3" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <center>CEP</center>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show pl-3" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <center>{{cep.cep}}</center>
+                    </div>
+
+                    <div id="headingTwo">
+                        <h2 class="bg-light">
+                            <button class="btn btn-link btn-block text-left  pl-3 collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <center>Estado</center>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse pl-3" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <center>{{cep.state}}</center>
+                    </div>
+
+                    <div id="headingThree">
+                        <h2 class="bg-light"    >
+                            <button class="btn btn-link btn-block text-left  pl-3 collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <center>Cidade</center>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse pl-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <center>{{cep.city}}</center>
+                    </div>
+
+                    <div id="headingFour">
+                        <h2 class="bg-light"    >
+                            <button class="btn btn-link btn-block text-left  pl-3 collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <center>Bairro</center>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse pl-3" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <center>{{cep.neighborhood}}</center>
+                    </div>
+
+                    <div id="headingFive">
+                        <h2 class="bg-light"    >
+                            <button class="btn btn-link btn-block text-left  pl-3 collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <center>Rua</center>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse pl-3" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <center>{{cep.street}}</center>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+</div>

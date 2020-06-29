@@ -1,0 +1,28 @@
+{
+  "name": "buscador-endereco",
+  "version": "1.0.0",
+  "description": "simples aplicação web totalmente em NodeJS, focada na pesquisa de endereços e logradouros por CEP.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericrodriguesfer/buscador-endereco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericrodriguesfer/buscador-endereco/issues"
+  },
+  "homepage": "https://github.com/ericrodriguesfer/buscador-endereco#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cep-promise": "^3.0.9",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "nodemon": "^2.0.4"
+  }
+}
