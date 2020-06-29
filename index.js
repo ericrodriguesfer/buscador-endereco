@@ -23,7 +23,7 @@ app.get("/erro", function(require,response){
 app.post("/search", function(require, response){
     cepPromise(require.body.cep_search).then((cep) => {
         response.render("home/index", {cep: cep});
-    }).catch((eror) => {
+    }).catch((error) => {
         response.redirect("/erro");
     });    
 });
